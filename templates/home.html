@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Covid Vaccine</title>
+  </head>
+  
+  <body>
+    <h1>
+        Vaccine Data
+    </h1>
+    <p>Click on the state whose chart you want to see</p>
+    <div class = 'container'>
+      {%for state in states%}
+      <div><a href = state/{{state}}>
+        {{state}}
+      </a></div>
+      {%endfor%}
+    </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{state}} Covid Vaccine</title>
+  </head>
+
+<body>
+    <p>{{link}}</p>
+  <img src= "{{link}}">
+    
+    <form action = 'date/{{state}}', method = 'post'>
+      <label for="start">Start date:</label>
+      <input type="date" id="start" name = 'start' value="2021-01-01" min="2021-01-01" max="2021-12-31" />
+      <label for="end">End date:</label>
+      <input type="date" id="end" name = 'end' value="2021-12-31" min="2021-01-01" max="2021-12-31" />
+      <p><button type = 'submit' class="btn btn-primary">Submit</button></p>
+
+    </form>
+</body>
+</html>
